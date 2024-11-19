@@ -18,9 +18,10 @@ body{
 .button{
   background-color: rgb(120, 35, 199);
   color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
+  padding: 20px 34px;
+  border-radius: 18px;
   text-decoration: none;
+  font-size: 25px;
 }
 .button:hover{
   background-color: rgb(139, 55, 218);
@@ -34,25 +35,83 @@ body{
   background-color: rgb(175, 92, 253);
 }
 #hero .text{
-  margin-left: 20%;
+  margin-left: 150px;
+  max-width: 600px;
+}
+#hero .logo{
+  padding: 15px 4px;
+  width: 200px;
+  height: auto;
 }
 #hero h1{
-  font-size: 75px;
+  font-size: 100px;
   color: white;
 }
 #hero p{
-  font-size: 18px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
-#hero img{
-  background-image: url("public/asset/image/young-smiling-doctor-with-stethoscope.jpg") no-repeat center center;
-  background-size: cover; /* Mengatur ukuran gambar agar cover 100% */
-  background-position: center; /* Memastikan posisi gambar di tengah */
+#hero .image img {
+  width: 950px;
+  height: 100vh;
+  display: block; 
 }
+
 .grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   justify-content: space-between;
   align-items: center;
+}
+
+#description {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../image/nurse-patient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.726);
+  z-index: 1;
+}
+
+.description-container {
+  position: relative;
+  z-index: 2; 
+  text-align: center;
+  max-width: 1200px;
+}
+
+#description .logo{
+  margin-bottom: 50px;
+  width: 250px;
+  height: auto;
+}
+
+#description h1{
+  font-size: 100px;
+  color: rgb(88, 27, 145);
+  margin: 20px 0;
+}
+
+#description p{
+  max-width: auto;
+  margin: 100px 0;
+  align-content: center;
+  padding: 0 50px;
+  font-size: 30px;
 }
