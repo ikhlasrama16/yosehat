@@ -175,6 +175,7 @@ body{
 
 .doctor-section{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -185,4 +186,48 @@ body{
   color: #ffff;
   font-size: 70px;
   font-weight: 500;
+  margin-bottom: 200px;
+}
+
+.doctor-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.doctor-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #ffff;
+  border-radius: 20px;
+}
+
+.doctor-image {
+  padding-bottom: 20px; /* Tambahkan jarak di bawah gambar */
+}
+
+
+.doctor-image > img{
+  position: relative;
+  height: 150px;
+  width: auto;
+  border-radius: 100px;
+  border: 10px solid #ffff;
+}
+
+.doctor-description{
+  margin-top: 0;
+  display: block;
+  position: relative;
+  width: 300px;
+  margin-bottom: 25%;
+}
+
+.doctor-description > p{
+  text-align: center;
 }
