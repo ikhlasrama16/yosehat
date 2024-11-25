@@ -173,61 +173,112 @@ body{
   font-size: 30px;
 }
 
-.doctor-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Section Styling */
+.doctor-section {
+  text-align: center;
+  background-color: #5cc2cc;
   height: 100vh;
   width: 100%;
-  background-color: #5b2ab3;
-}
-.doctor-section > h1{
-  color: #ffff;
-  font-size: 70px;
-  font-weight: 500;
-  margin-bottom: 200px;
+  padding: 50px 20px;
 }
 
-.doctor-container{
+.doctor-section h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+/* Section Styling */
+.doctor-section {
+  text-align: center;
+  background-color: #5b2ab3;
+  padding: 50px 20px;
+}
+
+.doctor-section h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* Container Styling */
+.doctor-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 300px;
 }
-.doctor-card{
+
+/* Card Styling */
+.doctor-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+  height: 400px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.doctor-image {
+  position: absolute;
+  top: -20px; /* Mengatur posisi gambar di luar card */
+  transform: translateY(-50%);
+}
+
+.doctor-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  
+}
+
+/* Description Styling */
+.doctor-description h2 {
+  margin-top: 75px;
+  font-size: 1.9rem;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.doctor-description p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Icon Styling */
+.doctor-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #7c3cf3;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
-  background-color: #ffff;
-  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.doctor-image {
-  padding-bottom: 20px; /* Tambahkan jarak di bawah gambar */
-}
-
-
-.doctor-image > img{
-  position: relative;
-  height: 150px;
-  width: auto;
-  border-radius: 100px;
-  border: 10px solid #ffff;
-}
-
-.doctor-description{
-  margin-top: 0;
-  display: block;
-  position: relative;
-  width: 300px;
-  margin-bottom: 25%;
-}
-
-.doctor-description > p{
-  text-align: center;
+.doctor-icon i {
+  color: #fff;
+  font-size: 1.5rem;
 }
